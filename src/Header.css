@@ -1,0 +1,19 @@
+/* Header.css */
+.header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .logo {
+    width: 100px; /* Adjust the width of the logo */
+    align-items: center;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .title {
+    margin-left: 10px; /* Add space between logo and title */
+    font-size: 24px; /* Increase font size for the title */
+  }
+  

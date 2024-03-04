@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Chocolate Cake",
+      "category": "Cakes",
+      "description": "Decadent chocolate cake with rich chocolate frosting.",
+      "price": 10.99,
+      "image": "chocolate.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Blueberry Muffin",
+      "category": "Pastries",
+      "description": "Moist muffin bursting with fresh blueberries.",
+      "price": 3.99,
+      "image": "muffin.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Blueberry Muffin",
+        "category": "Pastries",
+        "description": "Moist muffin bursting with fresh blueberries.",
+        "price": 3.99,
+        "image": "logo.jpg"
+      }
+  ]
+  

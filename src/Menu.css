@@ -1,0 +1,45 @@
+/* Menu.css */
+.menu {
+    max-width: 600px; 
+    margin: 0 auto;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+  
+  .menu-item-details {
+    flex: 1; 
+  }
+  
+  .menu-item-image img {
+    max-width: 100px; 
+    height: auto; 
+    margin-left: 20px; 
+  }
+  .menu-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .menu-buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-button {
+    background-color: #6d736e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-button:hover {
+    background-color: #9da69e;
+  }
+  
+  
