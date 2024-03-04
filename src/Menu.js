@@ -19,15 +19,15 @@ const Menu = () => {
       <div className="menu-header">
         <h1>Our Menu</h1>
       </div>
-      <div className="menu-buttons-container"> {/* Container for center alignment */}
+      <div className="menu-buttons-container"> 
         <div className="menu-buttons">
           <button className="menu-button" onClick={() => setSelectedCategory('All')}>All</button>
           <button className="menu-button" onClick={() => setSelectedCategory('Cakes')}>Cakes</button>
           <button className="menu-button" onClick={() => setSelectedCategory('Pastries')}>Pastries</button>
         </div>
       </div>
-      {Object.entries(groupedMenuData).map(([category, items]) => (
-        <Category key={category} category={category} items={items} selectedCategory={selectedCategory} />
+      {Object.entries(groupedMenuData).map(([category, item]) => (
+        <Category key={category} category={category} items={item} selectedCategory={selectedCategory} />
       ))}
     </div>
   );
