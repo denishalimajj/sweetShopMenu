@@ -1,21 +1,47 @@
-import React from 'react';
-import './MenuItem.css';
+import React, { useState } from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import Rating from '@mui/material/Rating'; 
+import './MenuItem.css'; 
+
 
 const MenuItem = ({ item }) => {
-  // Dynamically import the image based on the item's image property
-  const image = require(`./assets/${item.image}`).default;
+  const [rating, setRating] = useState(item.rating); 
+
+  const handleRatingChange = (event, newRating) => {
+    setRating(newRating);
+
+  };
+
+  const imagePath = require(`${item.image}`).default;
 
   return (
-    <div className="menu-item">
-      <div className="menu-item-details">
-        <h3>{item.name}</h3>
-        <p>{item.description}</p>
-        <p>Price: ${item.price}</p>
-      </div>
-      <div className="menu-item-image">
-        <img src={image} alt={item.name} />
-      </div>
-    </div>
+    <Card className="card"> {/* Add the 'card' class */}
+      <CardMedia
+        component="img"
+        height="140"
+        image={imagePath}
+        alt={item.name}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {item.name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {item.description}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Price: ${item.price}
+        </Typography>
+        <Rating
+          name={`rating-${item.id}`} 
+          value={rating} 
+          onChange={handleRatingChange} 
+        />
+      </CardContent>
+    </Card>
   );
 };
 

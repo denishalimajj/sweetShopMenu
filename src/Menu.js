@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Category from './Category';
 import menuData from './assets/all.json'; 
 import './Menu.css'; // Import your CSS file
+import ClickableLinkChips from './ClickableLinkChips'; // Import the ClickableLinkChips component
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -14,6 +15,10 @@ const Menu = () => {
     return acc;
   }, {});
 
+  const handleCategorySelection = (category) => {
+    setSelectedCategory(category);
+  }
+
   return (
     <div className="menu">
       <div className="menu-header">
@@ -21,9 +26,7 @@ const Menu = () => {
       </div>
       <div className="menu-buttons-container"> 
         <div className="menu-buttons">
-          <button className="menu-button" onClick={() => setSelectedCategory('All')}>All</button>
-          <button className="menu-button" onClick={() => setSelectedCategory('Cakes')}>Cakes</button>
-          <button className="menu-button" onClick={() => setSelectedCategory('Pastries')}>Pastries</button>
+          <ClickableLinkChips handleCategorySelection={handleCategorySelection} />
         </div>
       </div>
       {Object.entries(groupedMenuData).map(([category, item]) => (

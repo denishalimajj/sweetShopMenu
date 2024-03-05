@@ -5,7 +5,7 @@
       "category": "Cakes",
       "description": "Decadent chocolate cake with rich chocolate frosting.",
       "price": 10.99,
-      "image": "chocolate.jpg"
+      "image": "./images/chocolate.jpg"
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
       "category": "Pastries",
       "description": "Moist muffin bursting with fresh blueberries.",
       "price": 3.99,
-      "image": "muffin.jpg"
+      "image": "./images/muffin.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "category": "Pastries",
         "description": "Moist muffin bursting with fresh blueberries.",
         "price": 3.99,
-        "image": "logo.jpg"
+        "image": "./images/logo.jpg"
       }
   ]
   

@@ -23,3 +23,7 @@
     max-width: 200px; /* Adjust image size as needed */
   }
   
+/* Category.css */
+.category-title {
+  text-align: center;
+}
