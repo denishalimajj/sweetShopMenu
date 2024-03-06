@@ -1,28 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Rating from '@mui/material/Rating'; 
-import './MenuItem.css'; 
+import './MenuItem.css';
 
 
 const MenuItem = ({ item }) => {
-  const [rating, setRating] = useState(item.rating); 
-
-  const handleRatingChange = (event, newRating) => {
-    setRating(newRating);
-
-  };
-
-  const imagePath = require(`${item.image}`).default;
-
   return (
-    <Card className="card"> {/* Add the 'card' class */}
+    <Card className="card"> 
       <CardMedia
         component="img"
         height="140"
-        image={imagePath}
+        image={require(`${item.image}`)} 
         alt={item.name}
       />
       <CardContent>
@@ -35,11 +25,6 @@ const MenuItem = ({ item }) => {
         <Typography variant="body2" color="text.secondary">
           Price: ${item.price}
         </Typography>
-        <Rating
-          name={`rating-${item.id}`} 
-          value={rating} 
-          onChange={handleRatingChange} 
-        />
       </CardContent>
     </Card>
   );

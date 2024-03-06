@@ -1,32 +1,36 @@
 .image-container {
-    width: 150px; /* Adjust the width as needed */
+    width: 150px; 
     height: auto;
-    float: right; /* Float the container to the right side */
-    margin-left: 20px; /* Add some margin to the left for spacing */
+    float: right; 
+    margin-left: 20px; 
   }
 
-  /* MenuItem.css */
-.card {
-  max-width: 345px;
-  background-color: #f7e1da; /* Soft peach or pink */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  color: #333; /* Text color */
-  transition: transform .2s;
-  margin: 0 auto;
+  .MuiCard-root.card {
+    max-width: 345px;
+    background-color: #f7e1da; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333; 
+    transition: transform .2s;
+    
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
-/* MenuItem.css */
+
 .rating {
   margin-top: 5px;
 }
 
 .star {
-  color: gold; /* Set the color of the stars */
+  color: gold; 
 }
 
+@media (max-width: 345px) {
+  .MuiCard-root.card {
+    max-width: 100%;
+  }
+}
   

@@ -1,18 +1,12 @@
-/* Header.css */
-
-
 .logo {
-  width: 600px; 
-  height: auto;
-  display: flex;
-  justify-content: center;
+  max-width: 100%;
+  height: auto; 
+  display: block; 
   margin: 0 auto; 
 }
 
 .title {
-  margin-left: 10px; 
-  font-size: 50px; 
-  display: flex;
-  justify-content: center;
-
+  margin: 10px auto; 
+  font-size: 3rem; 
+  text-align: center;
 }
