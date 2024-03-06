@@ -116,3 +116,12 @@
   display: flex;
   flex-direction: column; /* Display buttons in a vertical list */
 }
+.MuiButtonBase-root.css-qp0cmq-MuiButtonBase-root{
+  margin-bottom: 5px; /* Add margin-bottom */
+}
+.css-vs27xc{
+  border-radius: 10px;
+}
+.MuiImageBackdrop-root.css-1p4evgx{
+  border-radius: 10px;
+}
