@@ -1,45 +1,118 @@
 /* Menu.css */
 .menu {
-    max-width: 600px; 
-    margin: 0 auto;
-  }
-  
-  .menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; 
-  }
-  
-  .menu-item-details {
-    flex: 1; 
-  }
-  
-  .menu-item-image img {
-    max-width: 100px; 
-    height: auto; 
-    margin-left: 20px; 
-  }
-  .menu-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+  max-width: 600px; 
+  margin: 0 auto;
+}
 
-  .menu-buttons-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .menu-button {
-    background-color: #6d736e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-  }
-  
-  .menu-button:hover {
-    background-color: #9da69e;
-  }
-  
-  
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.menu-item-details {
+  flex: 1; 
+}
+
+.menu-item-image img {
+  max-width: 100px; 
+  height: auto; 
+  margin-left: 20px; 
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-button {
+  background-color: #6d736e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: #9da69e;
+}
+
+/* Add styles for ButtonBase component */
+.menu-buttons-container .MuiButtonBase-root {
+  position: relative;
+  height: 200px;
+}
+
+.menu-buttons-container .MuiButtonBase-root:hover,
+.menu-buttons-container .MuiButtonBase-root.Mui-focusVisible {
+  z-index: 1;
+}
+
+.menu-buttons-container .MuiButtonBase-root:hover .MuiImageBackdrop-root,
+.menu-buttons-container .MuiButtonBase-root.Mui-focusVisible .MuiImageBackdrop-root {
+  opacity: 0.15;
+}
+
+.menu-buttons-container .MuiButtonBase-root:hover .MuiImageMarked-root,
+.menu-buttons-container .MuiButtonBase-root.Mui-focusVisible .MuiImageMarked-root {
+  opacity: 0;
+}
+
+.menu-buttons-container .MuiButtonBase-root:hover .MuiTypography-root,
+.menu-buttons-container .MuiButtonBase-root.Mui-focusVisible .MuiTypography-root {
+  border: 4px solid currentColor;
+}
+
+.menu-buttons-container .MuiButtonBase-root .MuiImageSrc-root {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.menu-buttons-container .MuiButtonBase-root .MuiImage-root {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.menu-buttons-container .MuiButtonBase-root .MuiImageBackdrop-root {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.4;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.menu-buttons-container .MuiButtonBase-root .MuiImageMarked-root {
+  height: 3px;
+  width: 18px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  left: calc(50% - 9px);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.MuiBox-root.css-13t4l7t {
+  display: flex;
+  flex-direction: column; /* Display buttons in a vertical list */
+}

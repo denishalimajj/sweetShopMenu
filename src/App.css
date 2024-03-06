@@ -3,3 +3,21 @@
   background-color: #151313; 
 }
 
+body {
+  background-color: #f7e1da;
+  animation: backgroundAnimation 20s linear infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #f7e1da;
+  }
+  50% {
+    background-color: #ffc107;
+  }
+  100% {
+    background-color: #f7e1da;
+  }
+}
+
+
