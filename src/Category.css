@@ -1,36 +1,32 @@
-/* MenuItem.css */
-
 .category-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center items horizontally */
+  justify-content: center; 
 }
 
 .category-item {
   display: flex;
-  flex-direction: column; /* Stack items vertically on smaller screens */
+  flex-direction: column; 
   margin-bottom: 20px;
   width: 100%;
 }
 
 .category-item-details {
   flex: 1;
-  padding-right: 20px; /* Adjust spacing as needed */
+  padding-right: 20px;
   margin: 0 auto;
 }
 
 .category-item-image {
   flex: 1;
-  display: flex; /* Ensure image fills its container */
-  align-items: center; /* Center image vertically */
+  display: flex; 
+  align-items: center; 
 }
 
 .category-item-image img {
-  max-width: 100%; /* Ensure image fits container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; 
+  height: auto; 
 }
-
-/* Category.css */
 
 .category-title {
   text-align: center;

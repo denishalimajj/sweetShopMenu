@@ -98,7 +98,7 @@ const Menu = () => {
   return (
     <div className="menu">
       <div className="menu-header">
-        <h1>Our Menu</h1>
+        <h1>Menu</h1>
       </div>
       <div className="menu-buttons-container"> 
         <div className="menu-buttons">
